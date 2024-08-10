@@ -1,0 +1,44 @@
+body {
+            background-image: none;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            opacity: 1;
+            height: 100vh;
+            top: 0;
+            margin-left:0;
+            margin-right:0;
+            width: 100%;
+            background-color: #f7f7f7;
+        }
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: -350px;
+            width: 250px;
+            height: 100%;
+            background: #fff;
+            padding: 20px;
+            transition: all 0.3s ease-in-out;
+        }
+        .sidebar.show {
+            left: 0;
+        }
+        button.toggle-sidebar {
+            position: fixed;
+            top: 1px;
+            left: 1px;
+        }
+        .section {
+            margin: 20px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 0.25rem;
+        }
+        footer {
+            background-color: #99ffcc;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
