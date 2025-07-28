@@ -1,114 +1,88 @@
 <!DOCTYPE html>
-<html lang="zh-Hans">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>星语の茶馆</title>
-  <link rel="preconnect" href="https://blog.iin0.cn">
-  <link rel="preconnect" href="https://github.com">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="chaguan.css">
 </head>
 <body>
-  <nav id="sidebar" class="sidebar" aria-label="导航菜单">
-    <section>
-      <h2>个人链接</h2>
+  <div class="container">
+    <button id="toggle-sidebar" class="toggle-sidebar">&gt;</button>
+    <div id="sidebar" class="sidebar">
+      <div class="clock-container">
+        <div id="time"></div>
+        <div id="clock-message"></div>
+      </div>
+      <h3>个人链接</h3>
       <ul>
-        <li><a href="http://lin-xingyu-s-home.wikidot.com/" rel="noopener noreferrer">星语的个人网站（寄了）</a></li>
-        <li><a href="http://lin-xingyu-s-home.wikidot.com/" rel="noopener noreferrer">星语的小屋（写文站）</a></li>
+        <li><a href=" ">星语的个人网站</a></li>
+        <li><a href="http://lin-xingyu-s-home.wikidot.com/">星语的小屋(写文站)</a></li>
       </ul>
-    </section>
-    <section>
-      <h2>其他常用网站</h2>
+      <h3>其他常用网站</h3>
       <ul>
-        <li><a href="https://deep-forest-club.wikidot.com/" rel="noopener noreferrer">深林文学部</a></li>
-        <li><a href="https://github.com/Simonlily" rel="noopener noreferrer">GitHub个人主页</a></li>
-        <li><a href="https://system.81dojo.com/en/players/show/simonlily" rel="noopener noreferrer">81道场主页</a></li>
-      </ul>
-    </section>
-    <section>
-      <h2>友情链接</h2>
+        <li><a href="https://deep-forest-club.wikidot.com/">深林文学部</a></li>
+        <li><a href="https://github.com/Simonlily">GitHub个人主页</a></li>
+        <li><a href="https://system.81dojo.com/en/players/show/simonlily">81道场主页</a></li>
+      </ul> 
+      <h3>友情链接</h3>
       <ul class="friend-links">
         <li>
-          <a href="https://blog.iin0.cn" target="_blank" rel="noopener noreferrer" aria-label="暮色音铃的博客">
-            <img src="https://blog.iin0.cn/favicon.ico" alt="暮色音铃博客图标" width="64" height="64">
+          <a href="https://blog.iin0.cn" target="_blank">
             <p>暮色音铃twiyin0</p>
+            <img src="https://blog.iin0.cn/favicon.ico" alt="暮色音铃twiyin0">
           </a>
         </li>
         <li>
-          <a href="https://blog.linux-qitong.top" target="_blank" rel="noopener noreferrer" aria-label="青稚的博客">
-            <img src="https://blog.linux-qitong.top/img/Snowflake.png" alt="青稚博客图标" width="80" height="80">
+          <a href="blog.linux-qitong.top" target="_blank">
             <p>青稚的空间</p>
+            <img src="https://blog.linux-qitong.top/img/Snowflake.ico" alt="青稚的空间头像">
           </a>
         </li>
       </ul>
-    </section>
-  </nav> 
-  <button class="toggle-sidebar" aria-expanded="false" aria-controls="sidebar" aria-label="切换导航菜单">&gt;</button>
-  <main class="content">
-    <div class="main-content">
-      <article>
-        <h2>关于我</h2>
-        <div class="profile">
-          <img src="http://xingyu-personal.wikidot.com/local--files/start/Image_1723094022894.png" 
-               alt="星语的卡通头像" 
-               width="200" 
-               height="200"
-               loading="eager">
-          <p>大家好咕，我是星语咕——（公认设定是猫猫），一只喜欢写代码的小鸽子，还喜欢音游，画画，下棋，麻将，还是一个车迷（确信）…很高兴认识大家咕～，还请大家多多指教哦!</p>
-        </div>
-        <section class="contact-qrcode">
-          <h3>欢迎扩列</h3>
-          <img src="http://lin-xingyu-s-home.wikidot.com/local--files/welcome/Image_191321815465076.jpg" 
-               alt="联系二维码" 
-               width="200" 
-               height="200"
-               loading="lazy">
-        </section>
-        <section>
-          <h2>其他内容</h2>
-          <p>是<a href="https://deep-forest-club.wikidot.com/" rel="noopener noreferrer">深林文学部</a>的不是很活跃的版主</p>
-          <p>同时也是<a href="https://deep-forest-club.wikidot.com/" rel="noopener noreferrer">深林文学部</a>站娘（森林娘）的配音</p>
-          <div class="game-platforms">
-            <h3>棋类对战平台：</h3>
-            <dl>
-              <dt>将棋:</dt>
-              <dd>81dojo</dd>
-              <dd>Shogi Quest</dd>
-              <dd>Lishogi</dd>
-              <dt>国际象棋：</dt>
-              <dd>国象联盟</dd>
-              <dd>Lichess</dd>
-              <dd>chess.com</dd>
-            </dl>
-          </div>
-        </section>
-        <section>
-          <h2>联系方式</h2>
-          <ul class="contact-list">
-            <li>个人群：909234462</li>
-            <li>私信：675998147</li>
-          </ul>
-        </section>
-      </article>
     </div>
-    <footer>
-      <div class="license">
-        <p>
-          <span property="dct:title">星语の茶馆</span>
-          由 <span property="cc:attributionName">星语</span> 创作，采用
-          <a href="https://creativecommons.org/licenses/by-sa/4.0/" 
-             rel="license noopener noreferrer"
-             aria-label="CC BY-SA 4.0协议">
-            CC BY-SA 4.0
-            <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="署名图标" height="22">
-            <img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="相同方式共享图标" height="22">
-          </a>
-          许可协议
-        </p>
-        <p>&copy; 2024 星语. 本作品采用 Creative Commons Attribution-ShareAlike 4.0 International License 许可进行分发。</p>
-      </div>
-    </footer>
-  </main>
-  <script src="script.js"></script>
+    <div class="main-content">
+      <header>
+        <h1>星语の茶馆</h1>
+      </header>
+      <section class="about-me">
+        <h2>关于我</h2>
+        <div class="profile-image">
+          <img src="http://lin-xingyu-s-home.wikidot.com/local--files/welcome/%E6%98%9F%E8%AF%AD" alt="星语的图片">
+        </div>
+        <p>大家好，我叫星语</p>
+      </section>
+      <section class="other-content">
+        <h2>其他内容</h2>
+        <p>是<a href="https://deep-forest-club.wikidot.com/">深林文学部</a>的不是很活跃的版主</p>
+        <p>同时也是站娘(森林娘)的配音</p>
+        <p>如果你想和我下棋的话：</p>
+        <ul class="chess-links">
+          <li>将棋：81dojo, shogiquest, lishogi.</li>
+          <li>chess：国象联盟, lichess, chess.com.</li>
+        </ul>
+      </section>
+      <section class="contact">
+        <h2>联系方式</h2>
+        <p>如果你要找我可以通过以下方式找到我：</p>
+        <p>各大QQ群聊，如我的个人群：909234462</p>
+        <ul>
+          <li>电子邮件：<a href="mailto:675998147@qq.com">675998147@qq.com</a></li>
+        </ul>
+      </section>
+    </div>
+  </div>
+  <footer>
+    <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
+      <span property="dct:title">星语の茶馆</span> by 
+      <span property="cc:attributionName">xingyu</span> is licensed under 
+      <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="license noopener noreferrer">
+        CC BY-SA 4.0
+        <img style="height:22px;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="BY">
+        <img style="height:22px;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="SA">
+      </a>
+    </p>
+  </footer>
+  <script src="chaguan.js"></script>
 </body>
 </html>
