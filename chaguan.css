@@ -187,17 +187,17 @@ footer a {
   }
 }
 .clock-container {
-  background-color: #f0fff6;
-  padding: 10px;
-  border-radius: 5px;
-  margin: 10px 0;
-  border: 1px solid #ddd;
-  text-align: center;
+  background-color: rgba(45, 67, 115, 0.05); /* 半透明蓝色背景 */
+  border-left: 4px solid #4a6ea9; /* 左侧装饰条 */
+  padding: 12px 15px;
+  margin: 15px 0;
+  border-radius: 0 8px 8px 0; /* 只有右侧圆角 */
 }
 #time {
   font-size: 24px;
   font-weight: bold;
-  margin-bottom: 5px;
+  color: #2d4373;
+  font-family: 'Courier New', monospace;
 }
 #clock-message {
   font-size: 14px;
