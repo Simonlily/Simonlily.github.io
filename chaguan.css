@@ -1,3 +1,28 @@
+/* 在你的CSS顶部添加 */
+:root {
+  --space-void: 22 23 33;          /* 主背景色 */
+  --space-planet: 92 222 236;      /* 主色调蓝 */
+  --space-sun: 255 191 165;        /* 强调色橙 */
+  --space-moon: 229 214 157;       /* 高亮色黄 */
+}
+
+/* 修改你的颜色变量 */
+body {
+  background-color: rgb(var(--space-void));
+  color: #e0e0e0; /* 浅灰色文字 */
+}
+
+.sidebar {
+  background-color: rgb(var(--space-void) / 0.8);
+}
+
+a {
+  color: rgb(var(--space-planet));
+}
+
+a:hover {
+  color: rgb(var(--space-sun));
+}
 * {
   margin: 0;
   padding: 0;
